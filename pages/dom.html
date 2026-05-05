@@ -40,6 +40,44 @@
                         <li><strong>Reagir a eventos:</strong> Executar uma função quando o usuário move o mouse ou pressiona uma tecla.</li>
                     </ol>
             </div>
+            <div class="apresentacao-conteudo-mais">
+                <h2 class="apresentacao-conteudo-subtitulo">Exemplo</h2>
+                <p><strong>Selecionar Elementos</strong></p>
+                <p>
+                    // Pelo ID (mais comum para elementos únicos)<br>
+                    const titulo = document.getElementById("meu-titulo");<br>
+                    // Pela Classe (retorna uma lista de elementos)<br>
+                    const botoes = document.getElementsByClassName("btn-azul");<br>
+                    // Pelo Seletor de CSS (o mais versátil)<br>
+                    const primeiroItem = document.querySelector("#lista .item");
+                </p>
+                <br>
+                <p><strong>Criar e Remover Elementos</strong></p>
+                <p>
+                    // 1. Criar o elemento<br>
+                    const novoItem = document.createElement("li");<br>
+                    // 2. Dar conteúdo a ele<br>
+                    novoItem.textContent = "Novo item da lista";<br>
+                    // 3. Adicionar ao HTML (dentro de uma < ul >, por exemplo)<br>
+                    const lista = document.querySelector("ul");<br>
+                    lista.appendChild(novoItem);<br>
+                    // 4. Para remover: <br>
+                    novoItem.remove();
+                </p>
+                <br>
+                <p><strong>Alterar Conteúdo e Estilo</strong></p>
+                <p>
+                    const box = document.querySelector("#caixa-aviso");<br>
+                    // Alterando o texto<br>
+                    box.innerText = "Operação realizada com sucesso!";<br>
+                    // Alterando o HTML interno (cuidado com segurança/XSS)<br>
+                    box.innerHTML = "<strong>Sucesso!</strong> Verifique seu e-mail.";<br>
+                    // Alterando o CSS diretamente<br>
+                    box.style.backgroundColor = "green";<br>
+                    box.style.color = "white";<br>
+                    box.style.borderRadius = "8px";
+                </p>
+            </div>
         </section>
     </main>
 

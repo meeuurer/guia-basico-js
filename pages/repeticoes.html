@@ -30,6 +30,41 @@
                 <h2 class="apresentacao-conteudo-subtitulo">Loop forEach</h2>
                 <p>Muito utilizado para percorrer Arrays (listas). Ele executa uma função para cada item da lista, sendo muito mais legível para lidar com conjuntos de dados.</p>
             </div>
+            <div class="apresentacao-conteudo-mais">
+                <h2 class="apresentacao-conteudo-subtitulo">Exemplo</h2>
+                <p><strong>Loop for</strong></p>
+                <p>
+                    // Contando de 1 a 5<br>
+                    for (let i = 1; i <= 5; i++) { <br>
+                    alert("Repetição nº: " + i); <br>
+                    }
+                    <ul>
+                        <li>Como funciona: i = 1 (começo), i <= 5 (enquanto for verdade, continue), i++ (some 1 ao final de cada volta).</li>
+                    </ul>
+                    <input type="button" value="Rodar o Exemplo" onclick="exemploFor()">
+                </p>
+                <br><br>
+                <p><strong>Loop while</strong></p>
+                <p>
+                    let voltas = 0; <br>
+                    let energia = 100;<br>
+                    while (energia > 0) {<br>
+                    voltas++;<br>
+                    energia -= 25; // Perde 25 de energia por volta<br>
+                    alert("Completei a volta " + voltas + ". Energia restante: " + energia);<br>
+                    }<br>
+                    <input type="button" value="Rodar o Exemplo" onclick="exemploWhile()">
+                </p>
+                <br><br>
+                <p><strong>Loop forEach</strong></p>
+                <p>
+                    const frutas = ["Maçã", "Banana", "Morango", "Uva"];<br>
+                    frutas.forEach(function(fruta, indice) {<br>
+                    console.log(indice + ": Eu gosto de " + fruta);<br>
+                    });<br>
+                    <input type="button" value="Rodar o Exemplo" onclick="exemploEach()">
+                </p>
+            </div>
         </section>
     </main>
 

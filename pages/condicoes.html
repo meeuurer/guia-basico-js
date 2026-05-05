@@ -36,6 +36,56 @@
                 <h2 class="apresentacao-conteudo-subtitulo">O switch</h2>
                 <p>Usado quando você tem um valor específico e quer compará-lo com várias opções (casos). É mais organizado que usar muitos else if seguidos.</p>
             </div>
+            <div class="apresentacao-conteudo-mais">
+                <h2><strong>Exemplos</strong></h2>
+                <ol>
+                    <li><strong>if, else if, else</strong>
+                        <br>
+                        <p>
+                            let hora = 14;<br>
+                            if (hora < 12) {<br>
+                                alert("Bom dia!");<br>
+                            } else if (hora < 18) {<br>
+                                alert("Boa tarde!");<br>
+                            } else {<br>
+                                alert("Boa noite!");<br>
+                            }
+                        </p>
+                        <input type="button" value="Rodar o Exemplo" onclick="exemploIfElse()">
+                    </li>
+                    <br>
+                    <li><strong>Operador Ternário</strong>
+                        <br>
+                        <p>
+                            let idade = 20;<br>
+                            const status = (idade >= 18) ? "Adulto" : "Menor de idade";<br>
+                            alert(status);
+                        </p>
+                        <input type="button" value="Rodar o Exemplo" onclick="exemploTernario()">
+                    </li>
+                    <br>
+                    <li><strong>switch</strong>
+                        <br>
+                        <p>
+                            let fruta = "Morango";<br>
+                            switch (fruta) {<br>
+                                case "Laranja":<br>
+                                alert("R$ 5,00 o quilo.");<br>
+                                break;<br>
+                                case "Morango":<br>
+                                alert("R$ 10,00 a caixa.");<br>
+                                break;<br>
+                                case "Banana":<br>
+                                alert("R$ 4,00 a dúzia.");<br>
+                                break;<br>
+                                default:<br>
+                                alert("Desculpe, não temos essa fruta.");<br>
+                            }
+                        </p>
+                        <input type="button" value="Rodar o Exemplo" onclick="exemploSwitch()">
+                    </li>
+                </ol>
+            </div>
         </section>
     </main>
 

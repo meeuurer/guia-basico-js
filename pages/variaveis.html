@@ -30,10 +30,23 @@
             <div class="apresentacao-conteudo-mais">
                 <h2 class="apresentacao-conteudo-subtitulo">Formas de Declarar</h2>
                 <ul>
-                    <li>let: permite criar uma variável cujo valor pode ser alterado posteriormente. Tem escopo de bloco (só existe dentro do {} onde foi criada).</li>
-                    <li>const: é usada para valores que não devem mudar após serem definidos. Também possui escopo de bloco.</li>
-                    <li>var: tem um comportamento chamado hoisting e escopo de função, o que pode causar bugs inesperados.</li>
+                    <li><strong>let:</strong> permite criar uma variável cujo valor pode ser alterado posteriormente. Tem escopo de bloco (só existe dentro do {} onde foi criada).</li>
+                    <li><strong>const:</strong> é usada para valores que não devem mudar após serem definidos. Também possui escopo de bloco.</li>
+                    <li><strong>var:</strong> tem um comportamento chamado hoisting e escopo de função, o que pode causar bugs inesperados.</li>
                 </ul>
+            </div>
+            <div class="apresentacao-conteudo-mais">
+                <h2 class="apresentacao-conteudo-subtitulo">Exemplo</h2>
+                <p>
+                    <strong>// O nome da loja nunca muda, então usamos const</strong><br>
+                    const nomeDaLoja = "Tech Store";
+                </p>
+                <br>
+                <p>
+                    <strong>// O preço do produto e o estoque podem mudar, usamos let</strong><br>
+                    let preco = 2500;<br>
+                    let estoque = 10;
+                </p>
             </div>
         </section>
     </main>
