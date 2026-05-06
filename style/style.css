@@ -2,7 +2,7 @@
 
 :root {
     --cor-branco: #F7F7F7;
-    --cor-cinza: #45474B;
+    --cor-preto: #1f1f1f;
     --cor-amarelo: #FFC107;
 
     --fonte-principal: 'Montserrat', sans-serif;
@@ -27,14 +27,14 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    background-color: #45474B;
-    border-radius: 40px;
+    background-color: var(--cor-preto);
+    border-radius: 20px;
     margin: 1% 27%;
     padding: 1%;
 }
 
 .cabecalho-menu-link {
-    color: #F7F7F7;
+    color: var(--cor-branco);
     font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
@@ -61,7 +61,7 @@ body {
 .apresentacao-conteudo-titulo {
     font-size: 6rem;
     font-weight: 600;
-    color: var(--cor-cinza);
+    color: var(--cor-preto);
     text-align: center;
     padding: 0% 0% 2% 0%;
 }
@@ -72,12 +72,12 @@ body {
 
 .apresentacao-conteudo-subtitulo {
     font-size: 2rem;
-    color: #45474B;
+    color: var(--cor-preto);
 }
 
 .apresentacao-conteudo-texto {
     padding-top: 1%;
-    color: var(--cor-cinza);
+    color: var(--cor-preto);
 }
 
 .apresentacao-conteudo-convite {
@@ -87,15 +87,15 @@ body {
 }
 
 div {
-    border: 1px solid #45474B;
-    border-radius: 40px;
+    border: 1px solid var(--cor-preto);
+    border-radius: 20px;
     padding: 2%;
 }
 
 .rodape {   
     padding: 24px;
     text-align: center;
-    background-color: #45474B;
+    background-color: var(--cor-preto);
 }
 
 .rodape-link {

@@ -40,42 +40,42 @@
                         <li><strong>Reagir a eventos:</strong> Executar uma função quando o usuário move o mouse ou pressiona uma tecla.</li>
                     </ol>
             </div>
-            <div class="apresentacao-conteudo-mais">
+            <div class="apresentacao-exemplo">
                 <h2 class="apresentacao-conteudo-subtitulo">Exemplo</h2>
                 <p><strong>Selecionar Elementos</strong></p>
                 <p>
-                    // Pelo ID (mais comum para elementos únicos)<br>
-                    const titulo = document.getElementById("meu-titulo");<br>
-                    // Pela Classe (retorna uma lista de elementos)<br>
-                    const botoes = document.getElementsByClassName("btn-azul");<br>
-                    // Pelo Seletor de CSS (o mais versátil)<br>
-                    const primeiroItem = document.querySelector("#lista .item");
+                    <span class="apresentacao-exemplo-comentario">// Pelo ID (mais comum para elementos únicos)</span><br>
+                    <span class="apresentacao-exemplo-var">const</span> titulo = <span class="apresentacao-exemplo-var-outro">document</span>.getElementById(<span class="apresentacao-exemplo-string">"meu-titulo"</span>);<br>
+                    <span class="apresentacao-exemplo-comentario">// Pela Classe (retorna uma lista de elementos)</span><br>
+                    <span class="apresentacao-exemplo-var">const</span> botoes = <span class="apresentacao-exemplo-var-outro">document</span>.getElementsByClassName(<span class="apresentacao-exemplo-string">"btn-azul"</span>);<br>
+                    <span class="apresentacao-exemplo-comentario">// Pelo Seletor de CSS (o mais versátil)</span><br>
+                    <span class="apresentacao-exemplo-var">const</span> primeiroItem = <span class="apresentacao-exemplo-var-outro">document</span>.querySelector(<span class="apresentacao-exemplo-string">"#lista .item"</span>);
                 </p>
                 <br>
                 <p><strong>Criar e Remover Elementos</strong></p>
                 <p>
-                    // 1. Criar o elemento<br>
-                    const novoItem = document.createElement("li");<br>
-                    // 2. Dar conteúdo a ele<br>
-                    novoItem.textContent = "Novo item da lista";<br>
-                    // 3. Adicionar ao HTML (dentro de uma < ul >, por exemplo)<br>
-                    const lista = document.querySelector("ul");<br>
-                    lista.appendChild(novoItem);<br>
-                    // 4. Para remover: <br>
-                    novoItem.remove();
+                    <span class="apresentacao-exemplo-comentario">// Criar o elemento</span><br>
+                    <span class="apresentacao-exemplo-var">const</span> novoItem = <span class="apresentacao-exemplo-var-outro">document</span>.createElement(<span class="apresentacao-exemplo-string">"li"</span>);<br>
+                    <span class="apresentacao-exemplo-comentario">// Dar conteúdo a ele</span><br>
+                    novoItem.textContent = <span class="apresentacao-exemplo-string">"Novo item da lista"</span>;<br>
+                    <span class="apresentacao-exemplo-comentario">// Adicionar ao HTML (dentro de uma < ul >, por exemplo)</span><br>
+                    <span class="apresentacao-exemplo-var">const</span> lista = <span class="apresentacao-exemplo-var-outro">document</span>.querySelector(<span class="apresentacao-exemplo-string">"ul"</span>);<br>
+                    <span class="apresentacao-exemplo-var-outro">lista</span>.appendChild(novoItem);<br>
+                    <span class="apresentacao-exemplo-comentario">// Para remover:</span><br>
+                    <span class="apresentacao-exemplo-var-outro">novoItem</span>.remove();
                 </p>
                 <br>
                 <p><strong>Alterar Conteúdo e Estilo</strong></p>
                 <p>
-                    const box = document.querySelector("#caixa-aviso");<br>
-                    // Alterando o texto<br>
-                    box.innerText = "Operação realizada com sucesso!";<br>
-                    // Alterando o HTML interno (cuidado com segurança/XSS)<br>
-                    box.innerHTML = "<strong>Sucesso!</strong> Verifique seu e-mail.";<br>
-                    // Alterando o CSS diretamente<br>
-                    box.style.backgroundColor = "green";<br>
-                    box.style.color = "white";<br>
-                    box.style.borderRadius = "8px";
+                    <span class="apresentacao-exemplo-var">const</span> box = <span class="apresentacao-exemplo-var-outro">document</span>.querySelector(<span class="apresentacao-exemplo-string">"#caixa-aviso"</span>);<br>
+                    <span class="apresentacao-exemplo-comentario">// Alterando o texto</span><br>
+                    <span class="apresentacao-exemplo-var-outro">box</span>.innerText = <span class="apresentacao-exemplo-string">"Operação realizada com sucesso!"</span>;<br>
+                    <span class="apresentacao-exemplo-comentario">// Alterando o HTML interno (cuidado com segurança/XSS)</span><br>
+                    <span class="apresentacao-exemplo-var-outro">box</span>.innerHTML = <span class="apresentacao-exemplo-string">"Sucesso! Verifique seu e-mail."</span>;<br>
+                    <span class="apresentacao-exemplo-comentario">// Alterando o CSS diretamente</span><br>
+                    <span class="apresentacao-exemplo-var-outro">box</span>.style.backgroundColor = <span class="apresentacao-exemplo-string">"green"</span>;<br>
+                    <span class="apresentacao-exemplo-var-outro">box</span>.style.color = <span class="apresentacao-exemplo-string">"white"</span>;<br>
+                    <span class="apresentacao-exemplo-var-outro">box</span>.style.borderRadius = <span class="apresentacao-exemplo-string">"8px"</span>;
                 </p>
             </div>
         </section>

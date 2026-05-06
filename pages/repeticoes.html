@@ -30,37 +30,39 @@
                 <h2 class="apresentacao-conteudo-subtitulo">Loop forEach</h2>
                 <p>Muito utilizado para percorrer Arrays (listas). Ele executa uma função para cada item da lista, sendo muito mais legível para lidar com conjuntos de dados.</p>
             </div>
-            <div class="apresentacao-conteudo-mais">
+            <div class="apresentacao-exemplo">
                 <h2 class="apresentacao-conteudo-subtitulo">Exemplo</h2>
                 <p><strong>Loop for</strong></p>
+                <br>
                 <p>
-                    // Contando de 1 a 5<br>
-                    for (let i = 1; i <= 5; i++) { <br>
-                    alert("Repetição nº: " + i); <br>
+                    <span class="apresentacao-exemplo-comentario">// Contando de 1 a 5</span><br>
+                    <span class="apresentacao-exemplo-comando">for</span> (<span class="apresentacao-exemplo-var">let</span> i = 1; i <= 5; i++) {<br>
+                    alert(<span class="apresentacao-exemplo-string">"Repetição nº: "</span> + i);<br>
                     }
-                    <ul>
-                        <li>Como funciona: i = 1 (começo), i <= 5 (enquanto for verdade, continue), i++ (some 1 ao final de cada volta).</li>
-                    </ul>
+                    <br><br>
+                    <p>• Como funciona: i = 1 (começo), i <= 5 (enquanto for verdade, continue), i++ (some 1 ao final de cada volta).</p>
                     <input type="button" value="Rodar o Exemplo" onclick="exemploFor()">
                 </p>
                 <br><br>
                 <p><strong>Loop while</strong></p>
+                <br>
                 <p>
-                    let voltas = 0; <br>
-                    let energia = 100;<br>
-                    while (energia > 0) {<br>
+                    <span class="apresentacao-exemplo-var">let</span> voltas = <span class="apresentacao-exemplo-numero">0</span>; <br>
+                    <span class="apresentacao-exemplo-var">let</span> energia = <span class="apresentacao-exemplo-numero">100</span>;<br>
+                    <span class="apresentacao-exemplo-comando">while</span> (energia > <span class="apresentacao-exemplo-numero">0</span>) {<br>
                     voltas++;<br>
-                    energia -= 25; // Perde 25 de energia por volta<br>
-                    alert("Completei a volta " + voltas + ". Energia restante: " + energia);<br>
+                    energia -= <span class="apresentacao-exemplo-numero">0</span>; <span class="apresentacao-exemplo-comentario">// Perde 25 de energia por volta</span><br>
+                    alert(<span class="apresentacao-exemplo-string">"Completei a volta "</span> + voltas + <span class="apresentacao-exemplo-string">". Energia restante: "</span> + energia);<br>
                     }<br>
                     <input type="button" value="Rodar o Exemplo" onclick="exemploWhile()">
                 </p>
                 <br><br>
                 <p><strong>Loop forEach</strong></p>
+                <br>
                 <p>
-                    const frutas = ["Maçã", "Banana", "Morango", "Uva"];<br>
-                    frutas.forEach(function(fruta, indice) {<br>
-                    console.log(indice + ": Eu gosto de " + fruta);<br>
+                    <span class="apresentacao-exemplo-var">const</span> frutas = [<span class="apresentacao-exemplo-string">"Maçã"</span>, <span class="apresentacao-exemplo-string">"Banana"</span>, <span class="apresentacao-exemplo-string">"Morango"</span>, <span class="apresentacao-exemplo-string">"Uva"</span>];<br>
+                    <span class="apresentacao-exemplo-var">frutas</span>.forEach(function(fruta, indice) {<br>
+                    alert(indice + <span class="apresentacao-exemplo-string">": Eu gosto de "</span> + fruta);<br>
                     });<br>
                     <input type="button" value="Rodar o Exemplo" onclick="exemploEach()">
                 </p>
