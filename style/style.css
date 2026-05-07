@@ -26,9 +26,9 @@ body {
 .cabecalho-menu {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25rem;
     background-color: var(--cor-preto);
-    border-radius: 20px;
+    border-radius: 1.25rem;
     margin: 1% 27%;
     padding: 1%;
 }
@@ -49,13 +49,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 82px;
+    gap: 5rem;
 }
 
 .apresentacao-conteudo {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .apresentacao-conteudo-titulo {
@@ -88,12 +88,12 @@ body {
 
 div {
     border: 1px solid var(--cor-preto);
-    border-radius: 20px;
+    border-radius: 1.25rem;
     padding: 2%;
 }
 
 .rodape {   
-    padding: 24px;
+    padding: 1.5rem;
     text-align: center;
     background-color: var(--cor-preto);
 }
