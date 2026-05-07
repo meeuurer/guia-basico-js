@@ -43,9 +43,9 @@
                 <br>
                 <p>
                     <span class="apresentacao-exemplo-var">let</span> hora = <span class="apresentacao-exemplo-numero">14</span>;<br>
-                    <span class="apresentacao-exemplo-comando">if</span> (hora < <span class="apresentacao-exemplo-numero">12</span>) {<br>
+                    <span class="apresentacao-exemplo-comando">if</span> (<span class="apresentacao-exemplo-var-outro">hora</span> < <span class="apresentacao-exemplo-numero">12</span>) {<br>
                     &nbsp;alert(<span class="apresentacao-exemplo-string">"Bom dia!"</span>);<br>
-                    } <span class="apresentacao-exemplo-comando">else if</span> (hora < <span class="apresentacao-exemplo-numero">18</span>) {<br>
+                    } <span class="apresentacao-exemplo-comando">else if</span> (<span class="apresentacao-exemplo-var-outro">hora</span> < <span class="apresentacao-exemplo-numero">18</span>) {<br>
                     &nbsp;alert(<span class="apresentacao-exemplo-string">"Boa tarde!"</span>);<br>
                     } <span class="apresentacao-exemplo-comando">else</span> {<br>
                     &nbsp;alert(<span class="apresentacao-exemplo-string">"Boa noite!"</span>);<br>
@@ -57,8 +57,8 @@
                 <br>
                 <p>
                     <span class="apresentacao-exemplo-var">let</span> idade = <span class="apresentacao-exemplo-numero">20</span>;<br>
-                    <span class="apresentacao-exemplo-var">const</span> status = (idade >= <span class="apresentacao-exemplo-numero">18</span>) ? <span class="apresentacao-exemplo-string">"Adulto"</span> : <span class="apresentacao-exemplo-string">"Menor de idade"</span>;<br>
-                    alert(status);
+                    <span class="apresentacao-exemplo-var">const</span> status = (<span class="apresentacao-exemplo-var-outro">idade</span> >= <span class="apresentacao-exemplo-numero">18</span>) ? <span class="apresentacao-exemplo-string">"Adulto"</span> : <span class="apresentacao-exemplo-string">"Menor de idade"</span>;<br>
+                    alert(<span class="apresentacao-exemplo-var">status</span>);
                 </p>
                 <input type="button" value="Rodar o Exemplo" onclick="exemploTernario()">
                 <br><br>
@@ -66,7 +66,7 @@
                 <br>
                 <p>
                     <span class="apresentacao-exemplo-var">let</span> fruta = <span class="apresentacao-exemplo-string">"Morango"</span>;<br>
-                    <span class="apresentacao-exemplo-comando">switch</span> (fruta) {<br>
+                    <span class="apresentacao-exemplo-comando">switch</span> (<span class="apresentacao-exemplo-var-outro">fruta</span>) {<br>
                     &nbsp;<span class="apresentacao-exemplo-comando">case</span> <span class="apresentacao-exemplo-string">"Laranja"</span>:<br>
                     &nbsp;&nbsp;&nbsp;alert(<span class="apresentacao-exemplo-string">"R$ 5,00 o quilo."</span>);<br>
                     &nbsp;&nbsp;&nbsp;<span class="apresentacao-exemplo-comando">break</span><br>

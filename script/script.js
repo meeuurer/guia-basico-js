@@ -1,28 +1,3 @@
-function exemploFor() {
-    for (let i = 1; i <= 5; i++) {
-    alert("Repetição nº: " + i);
-    }
-}
-
-function exemploWhile() {
-    let voltas = 0; 
-    let energia = 100;
-
-    while (energia > 0) {
-    voltas++;
-    energia -= 25;
-    alert("Completei a volta " + voltas + ". Energia restante: " + energia);
-    }
-}
-
-function exemploEach() {
-    const frutas = ["Maçã", "Banana", "Morango", "Uva"];
-
-    frutas.forEach(function(fruta, indice) {
-    alert(indice + ": Eu gosto de " + fruta);
-    });
-}
-
 function exemploIfElse() {
     let hora = 14;
 
@@ -60,9 +35,34 @@ function exemploSwitch() {
     }
 }
 
+function exemploFor() {
+    for (let i = 1; i <= 5; i++) {
+    alert("Repetição nº: " + i);
+    }
+}
+
+function exemploWhile() {
+    let voltas = 0; 
+    let energia = 100;
+
+    while (energia > 0) {
+        voltas++;
+        energia -= 25;
+        alert("Completei a volta " + voltas + ". Energia restante: " + energia);
+    }
+}
+
+function exemploEach() {
+    const frutas = ["Maçã", "Banana", "Morango", "Uva"];
+
+    frutas.forEach(function(fruta, indice) {
+        alert(indice + ": Eu gosto de " + fruta);
+    })
+}
+
 function exemploFuncao() {
     function soma(n1=0, n2=0){
-    return n1 + n2
+        return n1 + n2
     }
     alert(soma(2,5))
 }
